@@ -1,5 +1,18 @@
 package tarea3;
 
+/**
+ * Este ejercicio plantea un problema relacionado con la comparación de cadenas en Java.
+ * El programa verifica si dos cadenas son iguales utilizando una condición específica.
+ * 
+ * Objetivo:
+ * - Comparar dos cadenas y determinar si son iguales en contenido.
+ * 
+ * Se espera que el programa:
+ * - Devuelva "true" si las cadenas tienen el mismo contenido y "false" en caso contrario.
+ * - Maneje correctamente tanto cadenas idénticas como cadenas que difieren en mayúsculas, 
+ *   minúsculas u otros caracteres.
+ * 
+ */
 public class StringComparison {
     public static void main(String[] args) {
         String[][] testCases = {
