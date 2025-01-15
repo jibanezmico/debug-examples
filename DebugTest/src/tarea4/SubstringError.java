@@ -1,16 +1,9 @@
 package tarea4;
 
 /**
- * Esta clase propone un ejercicio para trabajar con substrings de cadenas. 
- * El programa extrae una parte de cada cadena utilizando índices definidos 
- * y muestra el resultado.
- * 
- * Objetivo:
- * - Extraer un substring de cada cadena de entrada basándose en índices definidos.
- * 
- * Se espera que el programa:
- * - Extraiga correctamente un substring de cada cadena, sin generar errores.
- * 
+ * Esta clase calcula el substring correspondiente a la segunda mitad
+ * de las cadenas de prueba. Si la longitud de la cadena es impar, incluye
+ * el carácter del medio en la segunda mitad.
  */
 public class SubstringError {
     public static void main(String[] args) {
@@ -18,20 +11,22 @@ public class SubstringError {
             "HelloWorld",
             "JavaProgramming",
             "Debugging",
+            "Short",
+            "EdgeCaseExample"
         };
 
         for (int i = 0; i < testCases.length; i++) {
             System.out.println("Test case " + (i + 1) + ":");
             try {
-                String result = extractSubstring(testCases[i]);
-                System.out.println("Substring: " + result);
+                String result = extractSecondHalf(testCases[i]);
+                System.out.println("Second half: " + result);
             } catch (Exception e) {
                 System.out.println("Error: " + e.getMessage());
             }
         }
     }
 
-    public static String extractSubstring(String input) {
+    public static String extractSecondHalf(String input) {
         return input.substring(5, 15);
     }
 }

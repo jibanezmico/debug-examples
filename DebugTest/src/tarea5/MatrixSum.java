@@ -1,18 +1,7 @@
 package tarea5;
 
 /**
- * Este ejercicio se centra en el cálculo de la suma de elementos en una matriz
- * bidimensional. El programa recorre la matriz fila por fila, suma los elementos
- * y devuelve el total.
- * 
- * Objetivo:
- * - Recorrer una matriz bidimensional y calcular la suma total de sus elementos.
- * 
- * Se espera que el programa:
- * - Sume correctamente todos los elementos de la matriz.
- * - Maneje matrices de diferentes tamaños, incluidas aquellas con filas de longitudes
- *   distintas.
- * 
+ * Esta clase calcula la suma de los elementos en una matriz bidimensional.
  */
 public class MatrixSum {
     public static void main(String[] args) {

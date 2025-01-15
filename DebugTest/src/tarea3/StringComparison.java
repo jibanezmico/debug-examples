@@ -1,25 +1,18 @@
 package tarea3;
 
 /**
- * Este ejercicio plantea un problema relacionado con la comparación de cadenas en Java.
- * El programa verifica si dos cadenas son iguales utilizando una condición específica.
- * 
- * Objetivo:
- * - Comparar dos cadenas y determinar si son iguales en contenido.
- * 
- * Se espera que el programa:
- * - Devuelva "true" si las cadenas tienen el mismo contenido y "false" en caso contrario.
- * - Maneje correctamente tanto cadenas idénticas como cadenas que difieren en mayúsculas, 
- *   minúsculas u otros caracteres.
- * 
+ * Esta clase compara dos cadenas para verificar si tienen el mismo contenido,
+ * diferenciando entre mayúsculas y minúsculas (por ejemplo, "apple" y "APPLE"
+ * no son iguales).
  */
 public class StringComparison {
     public static void main(String[] args) {
+        // Casos de prueba
         String[][] testCases = {
             {"apple", "apple"},
-            {"banana", "banana"},
+            {"banana", new String("banana")},
             {"cherry", "CHERRY"},
-            {"date", "DATE"}
+            {new String("date"), new String("date")}
         };
 
         for (int i = 0; i < testCases.length; i++) {
